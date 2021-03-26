@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Tic Tac Toe - JS</title>
+  </head>
+  <body>
+    <h1>JOGO DA VELHA</h1>
+    <div class="game"></div>
+    <div class="button">
+      <div class="res"></div>
+      <button onclick="tic_tac_toe.start()" class="start">
+        <h3>REINICIAR</h3>
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+      tic_tac_toe.init(document.querySelector(".game"));
+      tic_tac_toe.start();
+    </script>
+  </body>
+</html>
